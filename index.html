@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeatherAPI</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <canvas id="icon1" width="128" height="128"></canvas>
+    <canvas id="icon2" width="128" height="128"></canvas>
+
+</head>
+
+<body>
+    <div class="container">
+        <ul id="box-ul">
+            <div class="row">
+                <h1>Today's Weather</h1>
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="text-center status">
+                    <p><span id="city"></span> <span id="country"></span></p>
+                    <p><span id="temp"></span><span class="temp" id="tempunit"></span></p>
+                    <p><span id="temp"></span><span class="temp" id="tempunit"></span></p>
+
+                    <p id="desc"></p>
+                </div>
+
+                <div class="text-center all-icon">
+                    <div class="icon sun-shower hide ">
+                        <div class="cloud"></div>
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                        <div class="rain"></div>
+                    </div>
+                    <div class="icon thunder-storm hide thunderstom">
+                        <div class="cloud"></div>
+                        <div class="lightning">
+                            <div class="bolt"></div>
+                            <div class="bolt"></div>
+                        </div>
+                    </div>
+                    <div class="icon cloudy hide clouds">
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                    </div>
+                    <div class="icon flurries hide snow">
+                        <div class="cloud"></div>
+                        <div class="snow">
+                            <div class="flake"></div>
+                            <div class="flake"></div>
+                        </div>
+                    </div>
+                    <div class="icon sunny hide clear">
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                    </div>
+                    <div class="icon rainy hide rain">
+                        <div class="cloud"></div>
+                        <div class="rain"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
