@@ -4,7 +4,7 @@ var lat, lon;
 var tempUnit = 'C';
 var currentTempInCelsius;
 
-$( document ).ready(function(){
+$( document).ready(function(){
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       var lat = "lat=" + position.coords.latitude;
@@ -28,7 +28,6 @@ $( document ).ready(function(){
       currentTempInCelsius = `${temp.toFixed()}`;
     }
   });
-  
 })
 
 function getWeather(lat, lon) {
